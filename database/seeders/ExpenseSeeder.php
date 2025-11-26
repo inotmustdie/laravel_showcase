@@ -3,16 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\Expense;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class ExpenseSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
         Expense::factory(50)->create();
